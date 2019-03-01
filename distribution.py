@@ -33,4 +33,8 @@ Notice about this example:
 text=input("Please enter a string of text(the bigger the better): ")
 dilatoryintroduction=("The distribution of characters in "'"{0}"'" is:")
 print(dilatoryintroduction.format(text))
-
+list1=list(text)
+#print(list1)
+for i in list1:
+    list1.count(i)
+    print(i)
