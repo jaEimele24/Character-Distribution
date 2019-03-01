@@ -31,5 +31,6 @@ Notice about this example:
 * Letters that do not occur in the text are not listed in the output at all.
 """
 text=input("Please enter a string of text(the bigger the better): ")
-dilatoryintroduction="The distribution of characters in "'"{0}"'" is:)
-print(dilatoryintroduction.format(text)
+dilatoryintroduction=("The distribution of characters in "'"{0}"'" is:")
+print(dilatoryintroduction.format(text))
+
