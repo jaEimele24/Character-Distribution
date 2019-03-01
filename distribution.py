@@ -35,6 +35,12 @@ dilatoryintroduction=("The distribution of characters in "'"{0}"'" is:")
 print(dilatoryintroduction.format(text))
 list1=list(text)
 #print(list1)
-for i in list1:
-    list1.count(i)
-    print(i)
+for x in list1:
+    list3=list1.count(x)
+    list2=list(x)
+    print(list2)
+    print(list3)
+    #list4=zip(list3,list2)
+    #print(list4)
+    
+    
