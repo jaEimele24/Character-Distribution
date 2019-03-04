@@ -30,16 +30,21 @@ Notice about this example:
   in the text and they are listed in the output in alphabetical order.
 * Letters that do not occur in the text are not listed in the output at all.
 """
+import string
 text=input("Please enter a string of text(the bigger the better): ")
 dilatoryintroduction=("The distribution of characters in "'"{0}"'" is:")
 print(dilatoryintroduction.format(text))
 list1=list(text)
 #print(list1)
-for x in list1:
-    list3=list1.count(x)
-    list2=list(x)
-    print(list2)
-    print(list3)
+list3s = []
+list2s = []
+for x in string.ascii_lowercase:
+    list3s.append(list1.count(x))
+    list2s.append(list1)
+    #print(list2s)
+    print(list3s)
+    list4=zip(list1,list3s)
+    print(list4)
     #list4=zip(list3,list2)
     #print(list4)
     
