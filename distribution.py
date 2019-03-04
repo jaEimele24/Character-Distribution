@@ -40,12 +40,14 @@ list3s = []
 list2s = []
 for x in string.ascii_lowercase:
     list3s.append(list1.count(x))
-    list2s.append(list1)
+    list2s.append(x)
     #print(list2s)
-    print(list3s)
-    list4=zip(list1,list3s)
-    print(list4)
-    #list4=zip(list3,list2)
-    #print(list4)
+    #print(list3s)
+list4=zip(list2s,list3s)
+print((list(list4)))
+list5=list(list4)
+list6=list5.sort()
+#list4=zip(list3,list2)
+#print(list4)
     
     
