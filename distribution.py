@@ -1,7 +1,7 @@
 """
 distribution.py
-Author: <your name here>
-Credit: <list sources used, if any>
+Author: James
+Credit: Teachers
 Assignment:
 Write and submit a Python program (distribution.py) that computes and displays 
 the distribution of characters in a given sample of text.
@@ -49,19 +49,20 @@ for x in string.ascii_lowercase:
 #print(list3s)
 list4=zip(list2s,list3s)
 #print(list4)
-list5=sorted(list4, key=lambda y:y[1])
-list6=list5[::-1]
+list5=sorted(list4, key=lambda y:y)
+list6=list5
+#[::-1]
 #print(list6)
 #[print(x[0]) for x in list6]
 for x in list6:
     tmp=x[1]
     while tmp>0:
-        print(x[0], end="")
+        if x[1]==0:
+            pass
+        else:
+            print(x[0], end="")
         tmp+=-1
-    print("")
-
-
-#list4=zip(list3,list2)
-#print(list4)
+    if x[1]>0:
+        print("")
     
     
