@@ -32,7 +32,7 @@ Notice about this example:
 """
 import string 
 import operator
-text=input("Please enter a string of text(the bigger the better): ")
+text=input("Please enter a string of text (the bigger the better): ")
 dilatoryintroduction=("The distribution of characters in "'"{0}"'" is:")
 text1=text.lower()
 print(dilatoryintroduction.format(text))
